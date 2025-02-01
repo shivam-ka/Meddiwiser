@@ -13,8 +13,6 @@ const DoctorDashboard = () => {
 
   useEffect(() => {
     if (dToken) getDoctorDash();
-    console.log(dashData)
-
   }, [dToken])
 
 
