@@ -1,0 +1,111 @@
+.doctor-profile-page{
+    overflow-y: scroll;
+}
+
+.doctor-profile-page form {
+    border-radius: 6px;
+    margin: 0 auto;
+    min-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.doctor-profile-page .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+ .doctor-profile-page .doctor-image {
+    width: 20vw;
+    border-radius: 20px;
+    background: linear-gradient(#7d98fc, #3c65f8);
+    margin-bottom: 20px;
+}
+
+
+.doctor-profile-page .form-group img {
+    width: 90px;
+    cursor: pointer;
+    border: 1px solid #161616;
+    border-radius: 50%;
+}
+
+.doctor-profile-page input,
+.doctor-profile-page select,
+.doctor-profile-page textarea {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #181818;
+    border-radius: 6px;
+    outline-color: #3d66f8;
+}
+
+.doctor-profile-page .checkbox{
+    width: fit-content;
+}
+
+.doctor-profile-page input[type="file"] {
+    padding: 5px;
+}
+
+.doctor-profile-page textarea {
+    resize: vertical;
+    max-height: 100px;
+}
+
+.doctor-profile-page button {
+    width: 80%;
+    background-color: #3d66f8;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    min-height: 43px;
+    max-height: 43px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.doctor-profile-page button img {
+    width: 22px;
+}
+
+
+
+@media (max-width:650px) {
+
+    .doctor-profile-page {
+        padding: 30px 10px;
+    }
+
+    .doctor-profile-page .profile-edit-form {
+        min-width: 95%;
+    }
+
+    .doctor-profile-page .form-group img {
+        width: 70px;
+    }
+
+    .doctor-profile-page input,
+    .doctor-profile-page select,
+    .doctor-profile-page textarea {
+        width: 100%;
+    }
+
+    .doctor-profile-page .checkbox{
+        width: fit-content;
+    }
+    
+    .doctor-profile-page button{
+        width: 100%;
+        margin-top: 10px;
+    }
+}

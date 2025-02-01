@@ -1,0 +1,93 @@
+.profile-page {
+  padding: 30px;
+}
+
+.profile-page form {
+  border-radius: 6px;
+  margin: 0 auto;
+  min-width: 500px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 40px 50px 40px;
+  box-shadow: 0 0 7px #2c4bba;
+}
+
+.profile-page form h2 {
+  text-align: center;
+  color: #3d66f8;
+  margin-bottom: 20px;
+}
+
+.profile-page .form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+
+
+.profile-page .form-group img {
+  width: 90px;
+  border: 1px solid gray;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.profile-page input,
+.profile-page select,
+.profile-page textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline-color: #3d66f8;
+
+  &:disabled {
+    cursor: no-drop;
+  }
+}
+
+.profile-page input[type="file"] {
+  padding: 5px;
+}
+
+.profile-page textarea {
+  resize: vertical;
+  max-height: 100px;
+}
+
+.profile-page button {
+  background-color: #3d66f8;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  max-height: 43px;
+  min-height: 43px;
+  border-radius: 06px;
+}
+
+.profile-page button img {
+  width: 22px;
+}
+
+
+
+@media (max-width:650px) {
+
+  .profile-page {
+    padding: 30px 10px;
+  }
+
+  .profile-page .profile-edit-form {
+    min-width: 95%;
+  }
+
+  .profile-page .form-group img {
+    width: 50px;
+  }
+}

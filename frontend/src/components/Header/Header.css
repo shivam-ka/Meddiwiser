@@ -1,0 +1,35 @@
+.header {
+    position: relative;
+}
+
+.header img {
+    width: 100%;
+}
+
+.header h2 {
+    position: absolute;
+    top: 22%;
+    font-size: 85px;
+    left: 4.5%;
+    background: linear-gradient(135deg, #ae4a41, 25%, #003366);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header button {
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+}
+
+@media (max-width:1050px) {
+    .header h2 {
+        font-size: 75px;
+    }
+}
+
+@media (max-width: 850px) {
+    .header h2 {
+        font-size: 8vw;
+    }
+}

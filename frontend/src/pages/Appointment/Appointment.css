@@ -1,0 +1,205 @@
+.appointment-page {
+    padding: 30px 10vw;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.appointment-doc-details {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    border: 1px solid gray;
+    border-radius: 8px;
+
+}
+
+.appointment-doc-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+
+.doc-img {
+    width: 250px;
+    background: linear-gradient(#7d98fc, #3c65f8);
+    border-radius: 8px 0 0 8px;
+}
+
+.doc-name {
+    font-size: 26px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #393939;
+}
+
+.doc-name img {
+    width: 20px;
+}
+
+.doc-degree {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.doc-degree p {
+    padding: 2px 8px;
+    border: 1px solid #393939;
+    border-radius: 30px;
+    font-size: 12px;
+}
+
+.doc-about {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.doc-about p {
+    width: 85%;
+    display: flex;
+    gap: 5px;
+    font-size: 15px;
+}
+
+.doc-about img {
+    width: 12px;
+    margin-bottom: 2px;
+}
+
+.doc-fees {
+    font-size: 17px;
+    font-weight: 600;
+    color: #393939;
+}
+
+.appointment-slot {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.book-slot {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.slot-date,
+.slot-time {
+    display: flex;
+    gap: 12px;
+    overflow-x: scroll;
+}
+
+.slot-time {
+    gap: 12px;
+    font-size: 15px;
+}
+
+.slot-date::-webkit-scrollbar,
+.slot-time::-webkit-scrollbar {
+    display: none;
+}
+
+.slot-date p,
+.slot-time p {
+    width: fit-content;
+    padding: 10px 15px;
+    border-radius: 30px;
+    display: flex;
+    gap: 4px;
+    border: 1px solid #393939;
+    cursor: pointer;
+    transition: 0.2s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        /* background-color: #3d66f8; */
+        background-color: #e6eaff;
+    }
+}
+
+.slot-time p {
+    padding: 10px 15px;
+    min-width: 110px;
+}
+
+.appointment-slot button {
+    min-width: 204px;
+    min-height: 43px;
+    max-height: 43px;
+    margin-top: 10px;
+    width: fit-content;
+    padding: 12px 30px;
+    background: #3d66f8;
+    color: white;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+.appointment-slot button img {
+    width: 23px;
+}
+
+
+@media (max-width:1150px) {
+    .appointment-page {
+        padding: 30px 4vw;
+    }
+
+    .doc-img {
+        width: 210px;
+    }
+
+    .appointment-doc-detail {
+        gap: 8px;
+    }
+
+    .doc-name {
+        font-size: 22px;
+    }
+
+    .doc-degree {
+        font-size: 14px;
+    }
+
+    .doc-about p {
+        width: 95%;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 750px) {
+    .appointment-page {
+        padding: 20px 4vw;
+    }
+
+    .appointment-doc-details {
+        flex-direction: column;
+        align-items: center;
+        border: none;
+    }
+
+    .doc-img {
+        width: 90vw;
+    }
+
+    .slot-date p {
+        font-size: 12px;
+        min-width: 84px;
+    }
+
+    .slot-time p{
+        font-size: 12px;
+        min-width: 100px;
+    }
+
+}

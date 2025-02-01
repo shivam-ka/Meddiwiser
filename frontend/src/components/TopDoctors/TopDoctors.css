@@ -1,0 +1,130 @@
+.top-doctor-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+.top-doctor-loading img {
+    width: 45px;
+    height: 45px;
+}
+
+.top-doctors-page {
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.top-doctors-title {
+    margin: 0 auto;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    transition: 0.3s;
+    cursor: default;
+    width: fit-content;
+
+    &:hover {
+        gap: 10px;
+    }
+}
+
+.top-doctors-title img {
+    width: 25px;
+}
+
+.top-doctors-desc {
+    margin: 0 auto;
+    font-size: 18px;
+    padding-left: 15px;
+
+}
+
+.top-doctors-container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 0 7vw;
+    column-gap: 10px;
+    row-gap: 15px;
+}
+
+.doctor {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid #2e5afa;
+    background: linear-gradient(#7d98fc, #3c65f8);
+    border-radius: 10px 10px 6px 6px;
+    overflow: hidden;
+    transition: ease-in-out 0.1s;
+    height: fit-content;
+    cursor: pointer;
+
+    &:hover {
+        scale: 1.02;
+    }
+}
+
+
+
+.doctor img {
+    width: 100%;
+    aspect-ratio: 4/4;
+
+}
+
+.doctor-details {
+    background: #fff;
+    border-radius: 0 0 6px 6px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.doctor-speciality {
+    font-size: 15px;
+    color: #363636;
+}
+
+
+@media (max-width:1050px) {
+
+    .top-doctors-container {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0 30px;
+    }
+}
+
+@media (max-width:850px) {
+    .top-doctors-desc {
+        padding: 0 10px;
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .top-doctors-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width:850px) {
+
+    .top-doctors-page {
+        padding: 30px 0;
+    }
+
+    .top-doctors-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 10px;
+    }
+
+    .doctor-details {
+        font-size: 13px;
+    }
+}

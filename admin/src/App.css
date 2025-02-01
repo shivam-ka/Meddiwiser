@@ -1,0 +1,29 @@
+.app {
+    padding-top: 74px;
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+}
+
+
+.app> :nth-child(2) {
+    padding: 15px 40px;
+    max-height: 89vh;
+    min-height: 89vh;
+    overflow-y: scroll;
+}
+
+.app> :nth-child(2)::-webkit-scrollbar{
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .app> :nth-child(2) {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 850px) {
+    .app {
+        padding-top: 63px;
+    }
+}

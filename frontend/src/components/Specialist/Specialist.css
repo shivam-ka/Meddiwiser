@@ -1,0 +1,109 @@
+.specialist {
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.specialist-title {
+    margin: 0 auto;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    transition: 0.3s;
+    cursor: default;
+    width: fit-content;
+
+    &:hover {
+        gap: 10px;
+    }
+}
+
+.specialist-title img {
+    width: 25px;
+}
+
+.specialist-desc {
+    margin: 0 auto;
+    font-size: 18px;
+
+}
+
+.all-specialist {
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    overflow-x: scroll;
+}
+
+.all-specialist::-webkit-scrollbar {
+    display: none;
+}
+
+.all-specialist a {
+    min-width: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.all-specialist a img {
+    width: 100px;
+    border: 2px solid #d6d6d6;
+    padding: 12px;
+    border-radius: 40px;
+    transition: 0.3s;
+
+    &:hover {
+        border-color: #577cff;
+    }
+}
+
+@media (max-width:1050px) {
+
+    .all-specialist {
+        justify-content: start;
+        width: 100%;
+        /* overflow-x: scroll; */
+    }
+
+    .specialist-desc {
+        padding-left: 15px;
+
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .specialist{
+        padding-bottom: 0;
+    }
+
+    .specialist-desc {
+        padding: 0 10px;
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .all-specialist {
+        padding-right: 5px;
+        width: 100%;
+        gap: 5px;
+        overflow-x: scroll;
+    }
+
+    .all-specialist a {
+        min-width: 80px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .all-specialist a img {
+        width: 60px;
+    }
+}

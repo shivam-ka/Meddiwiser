@@ -1,0 +1,53 @@
+.banner {
+    position: relative;
+    padding: 0 7vw;
+    margin-bottom: 80px;
+}
+
+.banner img {
+    margin: auto;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.banner h2 {
+    position: absolute;
+    top: 32%;
+    left: 12%;
+    font-size: 4vw;
+    background: linear-gradient(145deg, #FF6F61, 35%, #003366);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner button {
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+}
+
+@media (max-width:1050px) {
+    .banner {
+        padding: 0 4vw;
+    }
+
+    .banner h2 {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 850px) {
+    .banner {
+        padding: 0 2vw;
+        margin-bottom: 30px;
+    }
+
+
+    .banner h2 {
+        top: 30%;
+        left: 5%;
+        font-size: 4.5vw;
+    }
+
+
+}

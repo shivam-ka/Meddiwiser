@@ -1,0 +1,73 @@
+.dashboard-data {
+    display: flex;
+    gap: 20px;
+}
+
+.data {
+    width: fit-content;
+    display: flex;
+    background: #f5eeff;
+    gap: 15px;
+    align-items: center;
+    border: 1px solid #5d57ff;
+    padding: 10px 45px 10px 10px;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #e0d2f7;
+    }
+
+    &:active {
+        scale: 0.97;
+    }
+}
+
+.data img {
+    width: 50px;
+    border-radius: 2px;
+}
+
+.data div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.doctors-list-number {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.latest-appointment-container {
+    margin-top: 30px;
+}
+
+.latest-appointment-container h3 {
+    margin-bottom: 10px;
+}
+
+.latest-appointment {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+@media (max-width:850px) {
+    .data img {
+        width: 35px;
+    }
+
+    .data {
+        gap: 5px;
+    }
+
+    .data p {
+        font-size: 14px;
+    }
+
+    .doctors-list-number {
+        font-size: 16px;
+    }
+}
