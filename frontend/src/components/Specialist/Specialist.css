@@ -68,7 +68,6 @@
     .all-specialist {
         justify-content: start;
         width: 100%;
-        /* overflow-x: scroll; */
     }
 
     .specialist-desc {
@@ -99,7 +98,7 @@
 
     .all-specialist a {
         min-width: 80px;
-        font-size: 12px;
+        font-size: 11px;
         text-align: center;
     }
 

@@ -46,7 +46,7 @@ const DoctorAppointment = () => {
             <p> {currency} {item.amount}</p>
 
             {item.isCompleted ? <button style={{ background: "#38c02c", color: 'black' }}>Completed</button> :
-              (item.cancelled ? <button>Cancelled</button> :
+              (item.cancelled ? <button style={{background:"#fff", color:"red", border:"1px solid red"}} >Cancelled</button> :
                 <div className='action'>
                   <button onClick={() => cancelAppointment(item._id)} >✖</button>
                   <button onClick={() => completeAppointment(item._id)} style={{ background: "#38c02c", color: 'black' }} >✔</button>

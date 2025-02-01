@@ -79,7 +79,7 @@ const DoctorDashboard = () => {
 
                 { item.isCompleted? <button style={{ background: "#38c02c", color: 'black' }} > Compelted </button> :
                   (item.cancelled ?
-                    <button>Cancelled</button>
+                    <button style={{background:"#fff", color:"red", border:"1px solid red"}} >Cancelled</button>
                     :
                     <button onClick={() => cancelAppointment(item._id)}>Cancel</button>)
                 }

@@ -4,6 +4,7 @@ import doctor_icon from './doctor_icon.png'
 import home_icon from './home_icon.png'
 import people_icon from './people_icon.png'
 import appointments_icon from './appointment.png'
+import upload_area from './upload_area.png'
 import earning_icon from './earning_icon.png'
 import patients_icon from './patients_icon.png'
 import loading from './loading.gif'
@@ -11,6 +12,7 @@ import page_loading from './page-loading.gif'
 import logo from './logo.png'
 
 export const assets = {
+    upload_area,
     logo,
     loading,
     page_loading,

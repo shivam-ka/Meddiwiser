@@ -87,11 +87,10 @@ const AdminContextProvider = (props) => {
     }
 
     const cancelAppointment = async (appointmentId) => {
+        const confirmResponse = confirm("Want To Cancel Appointment")
+        if (!confirmResponse) return;
         setBtnLoading(true)
         try {
-            const confirmResponse = confirm("Want To Cancel Appointment")
-            if (!confirmResponse) return null;
-
             const response = await axios.post(`${backendUrl}/api/admin/cancel-appointment`, { appointmentId }, { headers: { token } })
 
             if (response.data.success) {
@@ -129,7 +128,7 @@ const AdminContextProvider = (props) => {
         loading, changeAvailablity, removeDoctor,
         getAllApointment, appointments, setAppointments,
         currency, cancelAppointment, btnLoading,
-        getDashData, dashData, 
+        getDashData, dashData,
     }
 
     return (

@@ -79,7 +79,7 @@ const Dashboard = () => {
                   <p> {currency} {item.amount}</p>
                   {
                     item.cancelled ?
-                      <button>Cancelled</button>
+                      <button style={{background:"#fff", color:"red", border:"1px solid red"}} >Cancelled</button>
                       :
                       <button onClick={() => cancelAppointment(item._id)}>Cancel</button>
                   }
