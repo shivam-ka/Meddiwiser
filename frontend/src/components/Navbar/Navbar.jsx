@@ -35,7 +35,7 @@ const Navbar = () => {
                 <NavLink onClick={() => setShowMenu(false)} to={'doctors'} >All Doctors <img className='nav-img' src={assets.arrow_right} alt="" /></NavLink>
                 <NavLink onClick={() => setShowMenu(false)} to={'about'} >About <img className='nav-img' src={assets.arrow_right} alt="" /></NavLink>
                 <NavLink onClick={() => setShowMenu(false)} to={'/contact'} >Contact <img className='nav-img' src={assets.arrow_right} alt="" /></NavLink>
-                <button>Admin Panel</button>
+                 <a target='_blank' href="https://meddiwiser-admin.vercel.app/"><button >Admin Panel</button></a>  
                 <img onClick={() => setShowMenu(false)} className='menu_close' src={assets.cross_icon} alt="" />
             </ul>
             {token ?
