@@ -70,6 +70,7 @@ const AdminContextProvider = (props) => {
     }
 
     const getAllApointment = async () => {
+        setLoading(true)
         try {
 
             const response = await axios.get(`${backendUrl}/api/admin/all-appointment`, { headers: { token } })
@@ -82,6 +83,7 @@ const AdminContextProvider = (props) => {
         } catch (error) {
             toast.error(error.message)
         }
+        setLoading(false)
     }
 
     const cancelAppointment = async (appointmentId) => {
@@ -105,6 +107,7 @@ const AdminContextProvider = (props) => {
     }
 
     const getDashData = async () => {
+        setLoading(true)
         try {
             const response = await axios.get(`${backendUrl}/api/admin/dashboard`, { headers: { token } })
             if (response.data.success) {
@@ -116,6 +119,7 @@ const AdminContextProvider = (props) => {
         } catch (error) {
             toast.error(error.message);
         }
+        setLoading(false)
     }
 
 

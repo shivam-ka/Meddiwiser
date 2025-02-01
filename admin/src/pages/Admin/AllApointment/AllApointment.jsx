@@ -7,7 +7,7 @@ import { assets } from '../../../assets/assets';
 
 const AllApointment = () => {
   const { token, getAllApointment,
-    appointments, currency, cancelAppointment, btnLoading } = useContext(AdminContext);
+    appointments, currency, cancelAppointment, btnLoading, loading } = useContext(AdminContext);
   const { calculateAge, slotDateFormate } = useContext(AppContext);
 
   useEffect(() => {
@@ -19,7 +19,10 @@ const AllApointment = () => {
     <>
       {btnLoading ? <div className='btn-loading'>
         <img src={assets.page_loading} alt="" />
-      </div> : null}
+      </div> : <></>}
+      { loading ? <div className='page-loading'> 
+        <img src={assets.page_loading} alt="" />
+      </div> :
       <div className='all-appointment'>
         {
           appointments.map((item, index) => (
@@ -55,6 +58,7 @@ const AllApointment = () => {
           ))
         }
       </div>
+}
     </>
   )
 }
